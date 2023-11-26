@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- 導覽列 -->
+<nav>
+    <a href="#" class="logo">
+        Sammy
+    </a>
+    <span>
+        作品集
+    </span>
+    <div class="icon">
+        <a href="">
+            <img src="./img2/github.png" alt="github">
+        </a>
+        <a href="">
+            <img src="./img2/fb.png" alt="fb">
+        </a>
+        <a href="">
+            <img src="./img2/line.png" alt="line">
+        </a>
+    </div>
+</nav>
+<!-- 輪播 -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        
+        <div class="swiper-slide">
+            <img src="./img2/mountain.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img2/ocean.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img2/horse.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img2/draw.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img2/dog.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="./img2/cat.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<!-- 關於我 -->
+<div class="about">
+    <div class="aboutTitle" data-aos="fade-in" data-aos-duration="3000">關於我</div>
+    <h1 data-aos="flip-right" data-aos-duration="3000">Sammy</h1>
+    <div class="aboutContent" data-aos="zoom-in" data-aos-duration="3000">我是一位網頁設計師</div>
+    <a href="#">關於我</a>
+</div>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    // 啟動輪播
+    var swiper = new Swiper(".mySwiper", {});
+    // AOS啟動(動畫)
+    AOS.init();
+</script>
+
+</body>
+</html>
