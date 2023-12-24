@@ -52,10 +52,21 @@ nav span:hover {
   padding-top: 85px;
   height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .mySwiper {
+    height: 100%;
+  }
+}
 .mySwiper .swiper-slide img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 414px) {
+  .swiper-button-next, .swiper-button-prev {
+    top: 65%;
+  }
 }
 
 .about {
@@ -63,6 +74,18 @@ nav span:hover {
   height: 100vh;
   padding: 30px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    height: 100%;
+    padding: 100px 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .about {
+    padding: 100px 30px 70px;
+    overflow: hidden;
+  }
 }
 
 .aboutTitle {
@@ -116,8 +139,29 @@ h1:hover {
   margin: 0 auto;
   gap: 10px;
 }
+@media screen and (max-width: 768px) {
+  .workCard {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .workCard {
+    overflow: hidden;
+  }
+}
 .workCard .Card {
   width: 32%;
+}
+@media screen and (max-width: 768px) {
+  .workCard .Card {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .workCard .Card {
+    width: 100%;
+  }
 }
 .workCard .Card img {
   width: 100%;
