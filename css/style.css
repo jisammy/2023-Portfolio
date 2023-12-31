@@ -36,9 +36,50 @@ nav span:hover {
   color: #08bff2;
 }
 
+.menuOpen {
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .menuOpen {
+    display: none;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+  }
+  .menuOpen .menuIcon {
+    text-align: right;
+    padding: 12px 30px;
+  }
+  .menuOpen .maunList {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -76px;
+    gap: 15px;
+  }
+  .menuOpen .menuData {
+    margin: 0 33vw;
+  }
+  .menuOpen .menuData a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+}
+
 .icon {
   display: flex;
   gap: 10px;
+}
+@media screen and (max-width: 414px) {
+  .icon {
+    display: none;
+  }
 }
 .icon a {
   text-decoration: none;
@@ -46,6 +87,17 @@ nav span:hover {
 .icon a img {
   width: 32px;
   height: 32px;
+}
+
+.menu {
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .mySwiper {
@@ -64,7 +116,8 @@ nav span:hover {
 }
 
 @media screen and (max-width: 414px) {
-  .swiper-button-next, .swiper-button-prev {
+  .swiper-button-next,
+  .swiper-button-prev {
     top: 65%;
   }
 }

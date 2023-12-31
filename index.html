@@ -33,7 +33,34 @@
             <img src="./img2/line.png" alt="line">
         </a>
     </div>
+    <img id="menu" class="menu" src="./img2/menu-icon.png" alt="">
 </nav>
+<!-- menu open -->
+<div class="menuOpen">
+    <div class="menuIcon">
+        <img id="close" src="./img2/close_icon.png" alt="">
+    </div>
+    <div class="maunList">
+        <div class="menuData">
+            <a href="">
+                <img src="./img2/github.png" alt="">
+                <span>GitHub</span>
+            </a>
+        </div>
+        <div class="menuData">
+            <a href="">
+                <img src="./img2/fb.png" alt="">
+                <span>Facebook</span>
+            </a>
+        </div>
+        <div class="menuData">
+            <a href="">
+                <img src="./img2/line.png" alt="">
+                <span>Line</span>
+            </a>
+        </div>
+    </div>
+</div>
 <!-- 輪播 -->
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
@@ -144,6 +171,21 @@
     });
     // AOS啟動(動畫)
     AOS.init();
+
+    let menu = document.getElementById('menu');
+    let menuOpen = document.getElementsByClassName('menuOpen');
+    let close = document.getElementById('close');
+    
+    // 打開選單
+    menu.addEventListener('click',function(){
+        menuOpen[0].style.setProperty('display','block');
+        document.body.style.overflow = 'hidden';
+    })
+    // 關閉選單
+    close.addEventListener('click',function(){
+        menuOpen[0].style.setProperty('display','none');
+        document.body.style.overflow = 'auto';
+    })
 </script>
 
 </body>
